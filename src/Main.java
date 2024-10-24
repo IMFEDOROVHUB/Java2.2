@@ -5,19 +5,20 @@ public class Main {
         // параметров программы: начального счёта,
         // суммы пополнения и тп
         int initialAccount = 123;
-        int accountReplenishment = 1234;
+        int accountReplenishment = 500;
         int bonusRUB = accountReplenishment / 100;
 
+        int account;
         // Условным оператором проверяете, превысила ли
         // сумма пополнения порог, и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
         if (accountReplenishment >= 1000) {
-            int account = bonusRUB + accountReplenishment + initialAccount;
-            System.out.println("Сумма пополнения " + accountReplenishment + " на счету " + account);
+            account = bonusRUB + accountReplenishment + initialAccount;
         } else {
-            int account = accountReplenishment + initialAccount;
-            System.out.println("Сумма пополнения " + accountReplenishment + " на счету " + account);
+            account = accountReplenishment + initialAccount;
         }
+        System.out.println("Сумма пополнения " + accountReplenishment + " на счету " + account);
+
     }
 }
