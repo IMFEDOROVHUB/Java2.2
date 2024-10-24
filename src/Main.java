@@ -15,8 +15,7 @@ public class Main {
         if (accountReplenishment >= 1000) {
             int account = bonusRUB + accountReplenishment + initialAccount;
             System.out.println("Сумма пополнения " + accountReplenishment + " на счету " + account);
-        }
-        if (accountReplenishment < 1000) {
+        }else {
             int account = accountReplenishment + initialAccount;
             System.out.println("Сумма пополнения " + accountReplenishment + " на счету " + account);
         }
